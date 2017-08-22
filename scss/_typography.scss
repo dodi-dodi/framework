@@ -1,0 +1,107 @@
+:root {
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+}
+
+//HEADINGS
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  line-height: 1.35;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+//TEXT ALINGMENT
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+//TEXT TRANSFORM
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+//TYPES OF LISTS
+ol {
+  font-size: 1.1rem;
+  padding: 0 0 0 8px;
+  list-style-position: inside;
+  li {
+    margin: 3px 0;
+  }
+  &.list-upper-roman {
+    list-style-type: upper-roman;
+  }
+}
+
+ul {
+  font-size: 1.1rem;
+  padding: 0 0 0 8px;
+  list-style-position: inside;
+  li {
+    margin: 3px 0;
+    span {
+      margin-left: -8px;
+    }
+  }
+  &.list-square {
+    list-style-type: square;
+  }
+  &.list-circle {
+    list-style-type: circle;
+  }
+  &.list-unstyled {
+    list-style-type: none;
+  }
+}
