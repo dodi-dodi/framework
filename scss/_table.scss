@@ -1,3 +1,33 @@
 table {
-  border: 1px solid red;
+  border-collapse: collapse;
+  margin: 20px 0;
+  thead tr {
+    border-bottom: 2px solid black;
+  }
+  th, td {
+    padding: 7px;
+  }
+  &.table-bordered {
+    tr {
+      border-bottom: 2px solid black;
+    }
+  }
+
+  &.table-striped {
+    thead tr {
+      border-bottom: 2px solid black;
+    }
+    tbody tr:nth-child(odd) {
+      background: #ddd;
+    }
+  }
+  &.table-highlighted {
+    thead tr {
+      border-bottom: 2px solid black;
+    }
+    tbody tr:hover {
+      background: #ddd;
+    }
+  }
 }
+
