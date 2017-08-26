@@ -1,11 +1,10 @@
 :root {
-  font-size: 15px;
+  font-size: $root_font_size;
   line-height: 1.35;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 30px;
 }
 
 //HEADINGS
@@ -75,10 +74,10 @@ p {
 //TYPES OF LISTS
 ol {
   font-size: 1.1rem;
-  padding: 0 0 0 8px;
+  padding: 0 0 0 0.5rem;
   list-style-position: inside;
   li {
-    margin: 3px 0;
+    margin: 0.3rem 0;
   }
   &.list-upper-roman {
     list-style-type: upper-roman;
@@ -87,12 +86,12 @@ ol {
 
 ul {
   font-size: 1.1rem;
-  padding: 0 0 0 8px;
+  padding: 0 0 0 0.5rem;
   list-style-position: inside;
   li {
-    margin: 3px 0;
+    margin: 0.3rem 0;
     span {
-      margin-left: -8px;
+      margin-left: -0.5rem;
     }
   }
   &.list-square {

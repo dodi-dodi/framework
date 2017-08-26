@@ -1,5 +1,5 @@
 .container {
-  max-width: 1300px;
+  max-width: $container_max_width;
   margin: 0 auto;
   min-height: 100%;
   position: relative;
@@ -13,8 +13,8 @@
   min-height: 100%;
 }
 
-.row .row { margin: -10px; }
-[class*="col-"] { width: 100%; padding: 10px; }
+.row .row { margin: -$grid_padding; }
+[class*="col-"] { width: 100%; padding: $grid_padding; }
 .element { background: silver; height: 50px; }
 
 .row-align-center {

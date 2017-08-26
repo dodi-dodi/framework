@@ -1,21 +1,21 @@
 table {
   border-collapse: collapse;
-  margin: 20px 0;
+  margin: 1.5rem 0;
   thead tr {
     border-bottom: 2px solid black;
   }
   th, td {
-    padding: 7px;
+    padding: 0.5rem;
   }
   &.table-bordered {
     tr {
-      border-bottom: 2px solid black;
+      border-bottom: $table_border;
     }
   }
 
   &.table-striped {
     thead tr {
-      border-bottom: 2px solid black;
+      border-bottom: $table_border ;
     }
     tbody tr:nth-child(odd) {
       background: #ddd;
@@ -23,7 +23,7 @@ table {
   }
   &.table-highlighted {
     thead tr {
-      border-bottom: 2px solid black;
+      border-bottom: $table_border;
     }
     tbody tr:hover {
       background: #ddd;

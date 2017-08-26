@@ -1,0 +1,132 @@
+.form-input {
+  min-width: 200px;
+  position: relative;
+  margin-top: 1.4rem;
+  &.not-empty-input {
+    label {
+      top: -1.3em;
+      font-size: .7em;
+    }
+  }
+
+  input, textarea, select {
+    padding: .2em 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $color_gray;
+    min-width: inherit;
+
+    + label {
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: $transition_default;
+      color: $color_gray;
+    }
+    &:focus {
+      border-color: $color_primary;
+      + label {
+        top: -1.3em;
+        font-size: .7em;
+        color: $color_primary;
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+}
+
+//FORM RADIO
+.form-radio {
+  margin: 1rem 0;
+  input {
+    visibility: hidden;
+    position: absolute;
+    + label {
+      position: relative;
+      padding-left: 1.3rem;
+      margin: 1rem 1rem 1rem 0;
+      cursor: pointer;
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: .2rem;
+        width: 1rem;
+        height: 1rem;
+        border: 2px solid black;
+        border-radius: 50%;
+        transition: $transition_default;
+      }
+    }
+  }
+  input:checked {
+    + label {
+      &::before {
+        border-color: $color_primary;
+      }
+
+      &::after {
+        border: none;
+        background: $color_primary;
+        transform: scale(.5);
+      }
+    }
+  }
+}
+
+//FORM CHECKBOX
+.form-checkbox {
+  margin: 1rem 0;
+  input {
+    visibility: hidden;
+    position: absolute;
+    + label {
+      position: relative;
+      padding-left: 1.3rem;
+      margin: 1rem 1rem 1rem 0;
+      cursor: pointer;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: .2rem;
+        width: 1rem;
+        height: 1rem;
+        border: 2px solid black;
+        border-radius: 2px;
+        transition: $transition_default;
+      }
+      &::after {
+        content: '\2714';
+        position: absolute;
+        left: 0;
+        top: .2rem;
+        line-height: .75;
+        width: 1rem;
+        height: 1rem;
+        border: 3px solid transparent;
+        font-size: .8rem;
+        color: white;
+        transition: $transition_default;
+        background-color: $color_primary;
+        border-radius: 2px;
+        opacity: 0;
+      }
+    }
+  }
+  input:checked {
+    + label {
+      &::before {
+        border-color: $color_primary;
+      }
+      //element widoczny po zaznaczeniu
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
