@@ -1,10 +1,7 @@
-$root_font_size: 15px;
-$table_border: 2px solid black;
-$container_max_width: 1300px;
-$grid_padding: 10px;
-
+$color_white: #f9f9f9;
+$color_black: #232323;
 $color_gray: gray;
-$color_primary: #847bff;
+$color_primary: #4372bc;
 $color_success: #3dce40;
 $color_warning: #ffd800;
 $color_danger: #e00202;
@@ -23,5 +20,10 @@ $color_success_light: lighten($color_success, 10%);
 $color_warning_light: lighten($color_warning, 10%);
 $color_danger_light: lighten($color_danger, 10%);
 $color_info_light: lighten($color_info, 10%);
+
+$root_font_size: 15px;
+$table_border: 2px solid $color_black;
+$container_max_width: 1300px;
+$grid_padding: 10px;
 
 $transition_default: .3s all;
