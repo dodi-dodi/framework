@@ -22,8 +22,12 @@ $color_danger_light: lighten($color_danger, 10%);
 $color_info_light: lighten($color_info, 10%);
 
 $root_font_size: 15px;
+$base_line_height: 1.35;
+$base_font_family: "Open Sans", sans-serif;
+$headings_weight: 300;
 $table_border: 2px solid $color_black;
 $container_max_width: 1300px;
 $grid_padding: 10px;
 
 $transition_default: .3s all;
+

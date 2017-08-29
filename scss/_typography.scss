@@ -1,16 +1,16 @@
 :root {
   font-size: $root_font_size;
-  line-height: 1.35;
+  line-height: $base_line_height;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: $base_font_family;
   color: $color_black;
 }
 
 //HEADINGS
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
+  font-weight: $headings_weight;
   line-height: 1.35;
 }
 
