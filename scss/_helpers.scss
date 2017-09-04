@@ -84,3 +84,21 @@
 .mb-50 {
   margin-bottom: 50px;
 }
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.clear {
+  clear: both;
+  &:after, &:before {
+    display: block;
+    content: '';
+    clear: both;
+  }
+
+}

@@ -7,6 +7,7 @@ $color_warning: #ffd800;
 $color_danger: #e00202;
 $color_info: #5ec8e0;
 
+$color_white_dark: darken($color_white,20%);
 $color_gray_dark: darken($color_gray, 8%);
 $color_primary_dark: darken($color_primary, 8%);
 $color_success_dark: darken($color_success, 8%);
@@ -14,6 +15,7 @@ $color_warning_dark: darken($color_warning, 7%);
 $color_danger_dark: darken($color_danger, 7%);
 $color_info_dark: darken($color_info, 15%);
 
+$color_white_light: lighten($color_white, 10%);
 $color_gray_light: lighten($color_gray, 10%);
 $color_primary_light: lighten($color_primary, 10%);
 $color_success_light: lighten($color_success, 10%);
