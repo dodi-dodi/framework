@@ -42,7 +42,7 @@
   border-style: solid;
   border-color: $color_primary $color_success $color_warning $color_danger;
   border-radius: 50%;
-  animation: rotate .6s infinite ease-in-out;
+  animation: rotate 2s infinite linear;
 }
 
 @keyframes rotate {

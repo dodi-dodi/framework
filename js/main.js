@@ -24,3 +24,20 @@
     }
 
 })();
+
+
+(function alertsDismissable() {
+    let alerts = document.querySelectorAll('.alert.alert-dismissable');
+    for (let alert of alerts) {
+        alert.insertAdjacentHTML('beforeend', '<button type="button" class="close">&times;</button>');
+        let closeBtn = alert.querySelector('.close');
+        closeBtn.addEventListener('click', function () {
+            alert.className += ' alert-dismissed';
+            setInterval(function () {
+                alert.style.display = 'none';
+            }, 300);
+        });
+    }
+
+})();
+
