@@ -19,7 +19,9 @@ var src = {
     scss: 'scss/*.scss',
     scss_index: 'scss/framework.scss',
     css: '.',
-    html: '*.html'
+    html: '*.html',
+    js: 'js/*.js'
+
 };
 
 // compile SCSS files to css/index.css
@@ -37,13 +39,14 @@ gulp.task('sass:watch', function () {
 });
 
 // browser sync wachting on SCSS files and html files
-gulp.task('sync', ['sass:watch'], function () {
+gulp.task('sync', ['sass'], function () {
     browserSync.init({
         server: "."
     });
 
     gulp.watch(src.scss, ['sass']);
     gulp.watch(src.html).on('change', reload);
+    gulp.watch(src.js).on('change', reload);
 });
 
 // run browser sync by default
