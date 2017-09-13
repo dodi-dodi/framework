@@ -1,3 +1,4 @@
+// form
 (function formInputsMain() {
     let formInputs = document.querySelectorAll('.form-input');
 
@@ -24,7 +25,7 @@
     }
 })();
 
-
+// alert
 (function alertsDismissable() {
     let alerts = document.querySelectorAll('.alert.alert-dismissable');
     for (let alert of alerts) {
@@ -32,13 +33,14 @@
         let closeBtn = alert.querySelector('.close');
         closeBtn.addEventListener('click', function () {
             alert.className += ' alert-dismissed';
-            setInterval(function () {
+            setTimeout(function () {
                 alert.style.display = 'none';
             }, 300);
         });
     }
 })();
 
+// tabs
 (function tabs() {
     let tabs = document.querySelectorAll('.tabs');
     for (let tab of tabs) {
@@ -71,6 +73,42 @@
         if (activeTab !== null) {
             let activeBodyItem = tab.querySelector('.body ' + activeTab.getAttribute('href'));
             activeBodyItem.classList.add('show');
+        }
+    }
+})();
+
+// modal
+(function modal() {
+
+    let modalButtons = document.querySelectorAll('[data-modal-id]');
+    for (let modalButton of modalButtons) {
+        let modalId = modalButton.getAttribute('data-modal-id');
+        modalButton.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(modalId).style.display = 'flex';
+            document.querySelector('body').style.overflow = 'hidden';
+
+            setTimeout(function () {
+                document.querySelector(modalId).classList.add('show');
+            },1);
+        });
+    }
+    let modals = document.querySelectorAll('.modal');
+    for (let modal of modals) {
+        let closeButtons = modal.querySelectorAll('.close');
+        for (let closeButton of closeButtons) {
+            closeButton.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                modal.classList.remove('show');
+                document.querySelector('body').style.overflow = 'auto';
+
+                setTimeout(function () {
+                    modal.style.display = 'none';
+                },300);
+
+            });
         }
     }
 })();
