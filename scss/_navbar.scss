@@ -6,6 +6,13 @@
   justify-content: space-between;
   transition: $transition_default;
 
+  .container {
+    width: $container_max_width - 2 * $grid_padding;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   &.compact {
     font-size: .8em;
   }
@@ -46,10 +53,11 @@
       margin: 0;
       &.dropdown {
         ul {
+          padding: 0;
           list-style: none;
           display: none;
           flex-direction: column;
-          padding: 0;
+
         }
       }
     }

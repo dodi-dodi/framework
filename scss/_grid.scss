@@ -1,25 +1,19 @@
-.container {
-  max-width: $container_max_width;
-  margin: 0 auto;
-  min-height: 100%;
-  position: relative;
-}
+.container {  max-width: $container_max_width;  margin: 0 auto;  }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  position: absolute;
-  min-height: 100%;
-}
-
+.row {  display: flex; flex-wrap: wrap;  }
 .row .row { margin: -$grid_padding; }
-[class*="col-"] { width: 100%; padding: $grid_padding; }
-.element { background: silver; height: 50px; }
 
-.row-align-center {
-  align-items: center;
-}
+.row-align-center { align-items: center}
+.row-align-top {  align-items: flex-start;  }
+.row-align-bottom {  align-items: flex-end;  }
+.row-align-stretch {  align-items: stretch;  }
+.row-justify-center { justify-content: center }
+.row-justify-left { justify-content: flex-start  }
+.row-justify-right { justify-content: flex-end }
+.row-justify-space-between { justify-content: space-between  }
+.row-justify-space-around { justify-content: space-around }
+
+[class*="col-"] { width: 100%; padding: $grid_padding; }
 
 @media only screen {
   /* smarfrony w trybie portret */

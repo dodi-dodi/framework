@@ -31,7 +31,8 @@
     for (let alert of alerts) {
         alert.insertAdjacentHTML('beforeend', '<button type="button" class="close">&times;</button>');
         let closeBtn = alert.querySelector('.close');
-        closeBtn.addEventListener('click', function () {
+        closeBtn.addEventListener('click', function (e) {
+            e.preventDefault();
             alert.className += ' alert-dismissed';
             setTimeout(function () {
                 alert.style.display = 'none';
@@ -56,8 +57,8 @@
         i = 1;
         for (let menuItem of menuItems) {
             menuItem.href = "#" + tab.id + '-tab-' + i++;
-            menuItem.addEventListener('click', function (event) {
-                event.preventDefault();
+            menuItem.addEventListener('click', function (e) {
+                e.preventDefault();
 
                 let menuActiveItem = tab.querySelector('.menu .active');
 
@@ -150,7 +151,8 @@ function setBodyMargin() {
     let dropdownMenus = document.querySelectorAll('.dropdown');
     for (let dropdownMenu of dropdownMenus) {
         let dropdownMenuButton = dropdownMenu.querySelector('.dropdown-menu-button');
-        dropdownMenuButton.addEventListener('click', function () {
+        dropdownMenuButton.addEventListener('click', function (e) {
+            e.preventDefault();
             let menu = dropdownMenu.querySelector('.dropdown-menu');
             toogleFlex(menu);
         });
