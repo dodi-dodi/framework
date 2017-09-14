@@ -74,7 +74,6 @@ p {
 
 //TYPES OF LISTS
 ol {
-  font-size: 1.1rem;
   padding: 0 0 0 0.5rem;
   list-style-position: inside;
   li {
@@ -83,10 +82,13 @@ ol {
   &.list-upper-roman {
     list-style-type: upper-roman;
   }
+  &.list-bigger {
+    font-size: 1.2rem;
+  }
 }
 
 ul {
-  font-size: 1.1rem;
+
   padding: 0 0 0 0.5rem;
   list-style-position: inside;
   li {
@@ -94,6 +96,9 @@ ul {
     span {
       margin-left: -0.5rem;
     }
+  }
+  &.list-bigger {
+    font-size: 1.2rem;
   }
   &.list-square {
     list-style-type: square;

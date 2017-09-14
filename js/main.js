@@ -91,7 +91,7 @@
 
             setTimeout(function () {
                 document.querySelector(modalId).classList.add('show');
-            },1);
+            }, 1);
         });
     }
     let modals = document.querySelectorAll('.modal');
@@ -106,9 +106,62 @@
 
                 setTimeout(function () {
                     modal.style.display = 'none';
-                },300);
+                }, 300);
 
             });
         }
     }
 })();
+
+// navbar
+(function navbar() {
+    let navbarMobileMenuButtons = document.querySelectorAll('.navbar-mobile-menu-button');
+    for (let navbarMobileMenuButton of navbarMobileMenuButtons) {
+        navbarMobileMenuButton.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            let menu = document.querySelector(navbarMobileMenuButton.getAttribute('data-menu-id'));
+
+            toogleFlex(menu);
+        });
+    }
+
+    setBodyMargin();
+    window.addEventListener('resize', function () {
+        setBodyMargin();
+    });
+    window.addEventListener('scroll', function () {
+        if (document.querySelector('.navbar.fixed') !== null) {
+            if (window.scrollY > 100) {
+                document.querySelector('.navbar.fixed').classList.add('compact');
+            } else {
+                document.querySelector('.navbar.fixed').classList.remove('compact');
+            }
+        }
+    })
+})();
+
+function setBodyMargin() {
+    let navbarFixed = document.querySelector('.navbar.fixed');
+    document.querySelector('body').style.marginTop = navbarFixed.clientHeight + 10 + 'px';
+}
+
+(function dropdown() {
+    let dropdownMenus = document.querySelectorAll('.dropdown');
+    for (let dropdownMenu of dropdownMenus) {
+        let dropdownMenuButton = dropdownMenu.querySelector('.dropdown-menu-button');
+        dropdownMenuButton.addEventListener('click', function () {
+            let menu = dropdownMenu.querySelector('.dropdown-menu');
+            toogleFlex(menu);
+        });
+    }
+})();
+
+function toogleFlex(element) {
+    if (getComputedStyle(element).display === 'none') {
+        element.style.display = 'flex';
+    } else {
+        element.style.display = null;
+    }
+}
+
