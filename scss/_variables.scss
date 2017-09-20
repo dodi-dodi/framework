@@ -8,13 +8,14 @@ $color_danger: #e00202;
 $color_info: #5ec8e0;
 $color_navbar_background: #4de2ba;
 
-$color_white_dark: darken($color_white,10%);
+$color_white_dark: darken($color_white, 10%);
 $color_gray_dark: darken($color_gray, 8%);
 $color_primary_dark: darken($color_primary, 8%);
 $color_success_dark: darken($color_success, 8%);
 $color_warning_dark: darken($color_warning, 7%);
 $color_danger_dark: darken($color_danger, 7%);
 $color_info_dark: darken($color_info, 15%);
+$color_navbar_background_dark: darken($color_navbar_background, 8%);
 
 $color_white_light: lighten($color_white, 10%);
 $color_gray_light: lighten($color_gray, 10%);
@@ -23,6 +24,7 @@ $color_success_light: lighten($color_success, 10%);
 $color_warning_light: lighten($color_warning, 10%);
 $color_danger_light: lighten($color_danger, 10%);
 $color_info_light: lighten($color_info, 10%);
+$color_navbar_background_light: lighten($color_navbar_background, 8%);
 
 $container_max_width: 1200px;
 $grid_padding: 10px;
