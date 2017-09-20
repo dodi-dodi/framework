@@ -1,4 +1,5 @@
 .pagination {
+  margin-bottom: 1.2em;
   ul {
     list-style: none;
     margin: 0;
@@ -13,16 +14,28 @@
         display: block;
         text-align: center;
         line-height: 2.25;
-        border-radius: 50%;
-        color: $color_primary;
-        box-shadow: 0 1px 5px $color_gray;
+        color: $color_navbar_background;
         font-weight: bold;
 
         &:hover, &.active {
           color: $color_white;
-          background: $color_primary;
+          background: $color_navbar_background;
         }
       }
     }
   }
+}
+
+.pagination-circle {
+  a {
+    border-radius: 50%;
+    box-shadow: 0 1px 5px $color_gray;
+  }
+}
+
+.pagination-square {
+  a {
+    border-radius: 0.3rem;
+  }
+
 }

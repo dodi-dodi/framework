@@ -80,7 +80,7 @@
       width: auto;
       justify-content: space-between;
       li {
-        flex: 1;
+        flex-grow: 1;
         &.dropdown {
           position: relative;
           ul {
