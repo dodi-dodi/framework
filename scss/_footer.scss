@@ -1,6 +1,6 @@
 footer {
   margin-top: -10px;
-  background: $color_navbar_background_light;
+  background: $color_primary_light;
   color: $color_white;
   ul {
     list-style: none;
@@ -21,7 +21,7 @@ footer {
 
 .footer-copyright {
   height: 3em;
-  background: $color_navbar_background_dark;
+  background: $color_primary_dark;
 
   a {
     text-decoration: none;

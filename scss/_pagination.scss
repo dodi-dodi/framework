@@ -14,12 +14,12 @@
         display: block;
         text-align: center;
         line-height: 2.25;
-        color: $color_navbar_background;
+        color: $color_primary;
         font-weight: bold;
 
         &:hover, &.active {
           color: $color_white;
-          background: $color_navbar_background;
+          background: $color_primary;
         }
       }
     }

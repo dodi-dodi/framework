@@ -1,20 +1,20 @@
 $color_white: #f9f9f9;
 $color_black: #232323;
-$color_gray: gray;
-$color_primary: #4372bc;
-$color_success: #3dce40;
-$color_warning: #ffd800;
-$color_danger: #e00202;
-$color_info: #5ec8e0;
-$color_navbar_background: #4de2ba;
+$color_gray: #9E9E9E;
+$color_primary: #E91E63;
+$color_success: #5AF158;
+$color_warning: #FEEA3B;
+$color_danger: #F34336;
+$color_info: #03A9F4;
+$color_navbar_background: #374046;
 
 $color_white_dark: darken($color_white, 10%);
 $color_gray_dark: darken($color_gray, 8%);
 $color_primary_dark: darken($color_primary, 8%);
-$color_success_dark: darken($color_success, 8%);
-$color_warning_dark: darken($color_warning, 7%);
-$color_danger_dark: darken($color_danger, 7%);
-$color_info_dark: darken($color_info, 15%);
+$color_success_dark: darken($color_success, 10%);
+$color_warning_dark: darken($color_warning, 12%);
+$color_danger_dark: darken($color_danger, 12%);
+$color_info_dark: darken($color_info, 10%);
 $color_navbar_background_dark: darken($color_navbar_background, 8%);
 
 $color_white_light: lighten($color_white, 10%);
