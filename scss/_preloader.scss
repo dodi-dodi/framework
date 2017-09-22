@@ -1,12 +1,12 @@
 .spinner-1 {
-  height: 50px;
-  width: 50px;
-  border-width: 4px;
-  border-style: solid;
-  border-color: $color_primary transparent;
-  border-radius: 50%;
-  animation: rotate 1s infinite linear;
-}
+   height: 50px;
+   width: 50px;
+   border-width: 4px;
+   border-style: solid;
+   border-color: $color_primary transparent;
+   border-radius: 50%;
+   animation: rotate 1s infinite linear;
+ }
 
 .spinner-2 {
   box-sizing: content-box;
@@ -118,5 +118,69 @@
     left: 120%;
     width: 100%;
     background: $color_success;
+  }
+}
+
+//--------------------- */
+
+.line {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: $color_primary;
+}
+
+.loader-3 .line:nth-last-child(1) {
+  animation: loader-3 .6s .1s linear infinite;
+}
+
+.loader-3 .line:nth-last-child(2) {
+  animation: loader-3 .6s .2s linear infinite;
+}
+
+.loader-3 .line:nth-last-child(3) {
+  animation: loader-3 .6s .3s linear infinite;
+}
+
+@keyframes loader-3 {
+
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+
+}
+.loader-4 {
+  &:after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: $color_success;
+    animation: loader-4 3s infinite linear;
+    position: relative;
+    border-radius: 5px;
+  }
+}
+
+@keyframes loader-4 {
+
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(80px, 0) rotate(360deg);
+    background: $color_warning;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    background: $color_info;
   }
 }

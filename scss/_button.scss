@@ -164,7 +164,6 @@
   display: inline-block;
   width: 50px;
   height: 50px;
-  background: $color_primary;
   border-radius: 50%;
   line-height: 50px;
   padding: 0;
@@ -172,8 +171,9 @@
   transition: $transition_default;
   text-align: center;
   margin: 50px;
+}
+.btn-rotate {
   &:hover {
-    background-color: $color_primary_light;
     animation: rotate 1s infinite linear;
   }
 }
@@ -187,7 +187,7 @@
   }
 }
 
-.fa-pulse {
+.btn-pulse {
   position: relative;
   &:before{
     content: '';
@@ -217,38 +217,5 @@
     transform: scale(1.5);
   }
 }
-//.fa-bounce {
-//  display: inline-block;
-//  position: relative;
-//
-//  animation: bounce 1s infinite linear;
-//
-//}
-//
-//@keyframes bounce {
-//  0% {
-//    top: 0;
-//  }
-//  50% {
-//    top: -0.2em;
-//  }
-//  70% {
-//    top: -0.3em;
-//  }
-//  100% {
-//    top: 0;
-//  }
-//}
-//
-//
-///* Icon pulse */
-//.fa-pulse {
-//  display: inline-block;
-//  animation: pulse 2s infinite linear;
-//}
-//
-//@keyframes pulse {
-//  0% { opacity: 1; }
-//  50% { opacity: 0; }
-//  100% { opacity: 1; }
-//}
+
+
