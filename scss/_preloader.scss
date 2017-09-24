@@ -59,6 +59,7 @@
   background: $color_white_dark;
   position: relative;
   overflow: hidden;
+  z-index: -1;
   &:after {
     content: '';
     display: block;
@@ -85,6 +86,7 @@
   background: $color_white_dark;
   position: relative;
   overflow: hidden;
+  z-index: -1;
   &:after {
     content: '';
     display: block;
@@ -133,14 +135,17 @@
 
 .loader-3 .line:nth-last-child(1) {
   animation: loader-3 .6s .1s linear infinite;
+  background-color: $color_danger;
 }
 
 .loader-3 .line:nth-last-child(2) {
   animation: loader-3 .6s .2s linear infinite;
+  background-color: $color_warning;
 }
 
 .loader-3 .line:nth-last-child(3) {
   animation: loader-3 .6s .3s linear infinite;
+  background-color: $color_info;
 }
 
 @keyframes loader-3 {

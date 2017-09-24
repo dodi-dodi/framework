@@ -1,3 +1,6 @@
+.img-size {
+  width: 500px;
+}
 .img-responsive {
   max-width: 100%;
 }
@@ -13,13 +16,4 @@
 .img-thumbnail {
   box-shadow: 0 1px 5px $color_gray;
   padding: 1rem;
-}
-
-a img {
-  box-shadow: none;
-  transition: $transition_default;
-}
-
-a:hover img {
-  box-shadow: 0 2px 8px $color_black;
 }

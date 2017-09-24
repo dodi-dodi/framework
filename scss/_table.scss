@@ -18,7 +18,7 @@ table {
       border-bottom: $table_border ;
     }
     tbody tr:nth-child(odd) {
-      background: #ddd;
+      background: #D1F8D4;
     }
   }
   &.table-highlighted {
@@ -26,7 +26,7 @@ table {
       border-bottom: $table_border;
     }
     tbody tr:hover {
-      background: #ddd;
+      background: #D1F8D4;
     }
   }
 }

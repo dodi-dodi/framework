@@ -1,5 +1,5 @@
 .tooltip {
-  border-bottom: 1px dotted $color_black;
+  border-bottom: 1.7px dotted $color_primary;
   cursor: help;
   position: relative;
   &:after, &:before {
@@ -16,7 +16,7 @@
   }
   &:after {
     content: attr(data-tooltip);
-    background: $color_black;
+    background: $color_primary;
     color: $color_white;
     padding: .2em .5em;
     width: $tooltip_width;
@@ -34,7 +34,7 @@
       margin-left: -.6em;
     }
     &:before {
-      border-color: transparent transparent transparent $color_black;
+      border-color: transparent transparent transparent $color_primary;
       top: .3em;
       margin-left: -.6em;
     }
@@ -46,7 +46,7 @@
       margin-left: .6em;
     }
     &:before {
-      border-color: transparent $color_black transparent transparent;
+      border-color: transparent $color_primary transparent transparent;
       top: .3em;
       right: -.6em;
     }
@@ -60,7 +60,7 @@
       margin-left: 50%;
     }
     &:before {
-      border-color: $color_black transparent transparent transparent;
+      border-color: $color_primary transparent transparent transparent;
       top: -.25em;
       left: -.4em;
       margin-left: 50%;
@@ -74,7 +74,7 @@
       margin-left: 50%;
     }
     &:before {
-      border-color:  transparent transparent $color_black transparent;
+      border-color:  transparent transparent $color_primary transparent;
       bottom: -.5em;
       left: -.4em;
       margin-left: 50%;

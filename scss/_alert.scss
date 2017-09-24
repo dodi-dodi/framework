@@ -16,6 +16,9 @@
     float: right;
     margin-left: .5em;
     cursor: pointer;
+    &:focus {
+      outline: none;
+    }
   }
 
   &.alert-dismissed {
