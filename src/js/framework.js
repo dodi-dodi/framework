@@ -42,7 +42,7 @@
 })();
 
 // tabs
-(function tabs() {
+(function tabsMenu() {
     let tabs = document.querySelectorAll('.tabs');
     for (let tab of tabs) {
         let menuItems = tab.querySelectorAll('.menu li a');
