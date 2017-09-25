@@ -1,4 +1,4 @@
-.spinner-1 {
+.spinner-loader {
    height: 50px;
    width: 50px;
    border-width: 4px;
@@ -8,7 +8,7 @@
    animation: rotate 1s infinite linear;
  }
 
-.spinner-2 {
+.half-spinner-loader {
   box-sizing: content-box;
   height: 50px;
   width: 50px;
@@ -34,7 +34,7 @@
   }
 }
 
-.spinner-3 {
+.rainbow-spinner-loader{
   box-sizing: content-box;
   height: 50px;
   width: 50px;
@@ -54,7 +54,7 @@
   }
 }
 
-.loader-1 {
+.bar-loader {
   height: 4px;
   background: $color_white_dark;
   position: relative;
@@ -81,7 +81,7 @@
   }
 }
 
-.loader-2 {
+.rainbow-bar-loader {
   height: 4px;
   background: $color_white_dark;
   position: relative;
@@ -133,17 +133,17 @@
   background-color: $color_primary;
 }
 
-.loader-3 .line:nth-last-child(1) {
+.bounce-loader .line:nth-last-child(1) {
   animation: loader-3 .6s .1s linear infinite;
   background-color: $color_danger;
 }
 
-.loader-3 .line:nth-last-child(2) {
+.bounce-loader .line:nth-last-child(2) {
   animation: loader-3 .6s .2s linear infinite;
   background-color: $color_warning;
 }
 
-.loader-3 .line:nth-last-child(3) {
+.bounce-loader .line:nth-last-child(3) {
   animation: loader-3 .6s .3s linear infinite;
   background-color: $color_info;
 }
@@ -162,7 +162,7 @@
   }
 
 }
-.loader-4 {
+.roll-loader {
   &:after {
     content: '';
     display: block;
