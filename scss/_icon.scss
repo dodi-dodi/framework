@@ -3,7 +3,7 @@
   bottom: -.15em;
   line-height: 0;
   font-size: 1em;
-  z-index: -1;
+
 }
 
 .mi-primary {
@@ -40,6 +40,7 @@
   .material-icons {
     font-size: 3rem;
     line-height: 3rem;
+    z-index: -1;
   }
 
 }
