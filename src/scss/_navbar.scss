@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   transition: $transition_default;
+  z-index: 100;
 
   .container {
     width: $container_max_width - 2 * $grid_padding;

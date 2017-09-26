@@ -16,6 +16,13 @@
   }
 }
 
+@media (max-width: 768px) {
+.btn {
+  margin-bottom: .2em;
+  padding: .5em;
+}
+}
+
 //-------------------------------------
 .btn-animated {
   transition: $transition_default;
