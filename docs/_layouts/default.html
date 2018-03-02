@@ -1,0 +1,111 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="framework">
+  <title>Dodi-Dodi Framework (DDF)</title>
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&amp;subset=latin-ext"
+        rel="stylesheet">
+  <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext"
+      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+  <link rel="stylesheet" href="assets/framework.min.css">
+  <link rel="stylesheet" href="assets/main.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114758261-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-114758261-1');
+  </script>
+</head>
+<body>
+
+<div class="navbar fixed">
+  <div class="container">
+    <a href="/" class="navbar-logo">DDF</a>
+    <a href="#" class="navbar-mobile-menu-button" data-menu-id="#menu-1">Menu</a>
+    <ul class="navbar-menu" id="menu-1">
+      <li><a href="/grid">Grid</a></li>
+      <li><a href="/typography">Typography</a></li>
+      <li><a href="/table">Tables</a></li>
+      <li><a href="/form">Forms</a></li>
+      <li><a href="/button">Buttons</a></li>
+      <li><a href="/icon">Icons</a></li>
+      <li><a href="/label">Labels</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-menu-button">
+          More <i class="material-icons">arrow_drop_down</i>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="/pagination">Pagination</a></li>
+          <li><a href="/image">Images</a></li>
+          <li><a href="/panel">Panels</a></li>
+          <li><a href="/jumbotron">Jumbotron</a></li>
+          <li><a href="/preloader">Preloaders</a></li>
+          <li><a href="/tooltip">Tooltips</a></li>
+          <li><a href="/alert">Alerts</a></li>
+          <li><a href="/tabs">Tabs</a></li>
+          <li><a href="/modal">Modal window</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-m-12">
+      {{ content }}
+    </div>
+  </div>
+</div>
+
+<footer>
+   <div class="container">
+     <div class="row">
+       <div class="col-m-6">
+         <h5 class="space">Thank You</h5>
+         <p>
+           Aliquam et magnis dis parturient montes, nascetur ridiculus mus.
+           Nunc non sem. Nam eu lorem odio
+           condimentum nunc. Phasellus hendrerit.
+         </p>
+       </div>
+       <div class="col-m-4 col-m-offset-2">
+         <h5 class="space">Social</h5>
+         <ul>
+           <li><a href="https://github.com/dodi-dodi">Github</a></li>
+           <li><a href="https://linkedin.com/in/dorotadurlej">LinkedIn</a></li>
+           <li><a href="https://dodi-dodi.com/">Portfolio</a></li>
+         </ul>
+       </div>
+     </div>
+   </div>
+   <div class="footer-copyright">
+     <div class="container">
+       <div class="row">
+         <div class="col-m-8">
+           Copyright &copy; 2017 Dorota Durlej
+         </div>
+       </div>
+     </div>
+   </div>
+</footer>
+
+<script async src="assets/framework.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+---
+---
+
+@import "syntax";
+body > div.container {
+  min-height: calc(100vh - 271px);
+}

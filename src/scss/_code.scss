@@ -1,12 +1,23 @@
+/** Code formatting */
+pre, code {
+  font-size: 15px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: #eef;
+}
+
 code {
-  font-family: 'Cutive Mono', monospace, "Courier New";
-  text-align: left !important;
-  display: block;
-  margin: 0 auto;
-  padding: 0 15px;
-  font-size: 0.9em;
-  display: block;
+  padding: 1px 5px;
   letter-spacing: 1px;
-  background: rgb(209, 248, 212);
-  overflow: auto;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+}
+
+pre > code {
+  border: 0;
+  padding-right: 0;
+  padding-left: 0;
 }
